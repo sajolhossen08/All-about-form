@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0; 
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    border: 1px solid goldenrod;
+    height: 750px;
+}
+.box1{
+    background-color: aqua;
+    width: 300px;
+    height: 250px;
+}
+.box2{
+    background-color: rgb(255, 17, 0);
+    width: 300px;
+    height: 250px;
+}
+.box3{
+    background-color: rgb(0, 255, 21);
+    width: 300px;
+    height: 250px;
+}
+.container2{
+    display: grid;
+    height: 50vh;
+    grid-gap: 1vw 2vw;
+    grid-template-columns: 12vw 48vw 10vw 20vw;
+    
+}
+.item{
+    background-color: brown;
+    border: 1px solid black;
+}
+.item1{
+    grid-column: 1 / 4;
+    grid-row: 2 / 5;
+}
+body{
+    background-color: blue;
+}
+@media screen and (max-width: 800px) {
+    body{
+        background-color: red;
+    }
+}
+@media screen and (max-width:550px) {
+    body{
+        background-color: yellow;
+    }
+}
+img{
+    animation: widthAnimate 1s ease-in-out .5s infinite alternate;
+}
+@keyframes widthAnimate {
+    from{
+        width: 30px;
+        height: 30px;
+    }
+    to{
+        width: 100px;
+        height: 100px;
+    }
+}
